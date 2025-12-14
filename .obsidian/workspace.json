@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Collections/zip.md",
+                "file": "python/Collections/itertools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zip"
+              "title": "itertools"
             }
           }
         ]
@@ -183,6 +183,7 @@
   "active": "ab6cbc54710db293",
   "lastOpenFiles": [
     "python/Collections/zip.md",
+    "python/Collections/itertools.md",
     "my_project/__pycache__",
     "my_project/examples/oop/oop_protocol_solid.py",
     "my_project/examples/oop/oop_polymorphism_solid.py",
@@ -216,7 +217,6 @@
     "python/pass (операция).md",
     "python/Комментарии-теги.md",
     "python/Object storage/Где хранятся объекты.md",
-    "python/Comprehensions (генераторы коллекций)/list comprehension.md",
-    "python/Object storage/Типы объектов.md"
+    "python/Comprehensions (генераторы коллекций)/list comprehension.md"
   ]
 }
