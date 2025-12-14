@@ -11,10 +11,14 @@
             "id": "ab6cbc54710db293",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "python/Collections/zip.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "zip"
             }
           }
         ]
@@ -178,6 +182,7 @@
   },
   "active": "ab6cbc54710db293",
   "lastOpenFiles": [
+    "python/Collections/zip.md",
     "my_project/__pycache__",
     "my_project/examples/oop/oop_protocol_solid.py",
     "my_project/examples/oop/oop_polymorphism_solid.py",
@@ -188,7 +193,6 @@
     "my_project/examples/ddd/ddd_course_enrollment.py",
     "my_project/examples/ddd/ddd_aggregates_entities_vo.py",
     "my_project/examples/order_service.py",
-    "my_project/examples/todo_diary.py",
     "python/Collections/Типы коллекций/dict.md",
     "python/@dataclass.md",
     "python/Double underscore методы (__dunder__)/__post__init__(self).md",
