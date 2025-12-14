@@ -178,6 +178,17 @@
   },
   "active": "ab6cbc54710db293",
   "lastOpenFiles": [
+    "my_project/__pycache__",
+    "my_project/examples/oop/oop_protocol_solid.py",
+    "my_project/examples/oop/oop_polymorphism_solid.py",
+    "my_project/examples/oop/oop_inheritance_is_a.py",
+    "my_project/examples/oop/oop_encapsulation.py",
+    "my_project/examples/oop",
+    "my_project/examples/ddd/ddd_medical_visit.py",
+    "my_project/examples/ddd/ddd_course_enrollment.py",
+    "my_project/examples/ddd/ddd_aggregates_entities_vo.py",
+    "my_project/examples/order_service.py",
+    "my_project/examples/todo_diary.py",
     "python/Collections/Типы коллекций/dict.md",
     "python/@dataclass.md",
     "python/Double underscore методы (__dunder__)/__post__init__(self).md",
@@ -202,13 +213,6 @@
     "python/Комментарии-теги.md",
     "python/Object storage/Где хранятся объекты.md",
     "python/Comprehensions (генераторы коллекций)/list comprehension.md",
-    "python/Object storage/Типы объектов.md",
-    "python/Object storage/Call Stack (Стек вызовов).md",
-    "python/Collections/Типы коллекций",
-    "python/Comprehensions (генераторы коллекций)",
-    "python/Double underscore методы (__dunder__)",
-    "python/Collections",
-    "python/Object storage",
-    "python"
+    "python/Object storage/Типы объектов.md"
   ]
 }
