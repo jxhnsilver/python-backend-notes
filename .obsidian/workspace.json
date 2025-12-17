@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Collections/itertools.md",
+                "file": "http https/requests.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "itertools"
+              "title": "requests"
             }
           }
         ]
@@ -182,8 +182,22 @@
   },
   "active": "ab6cbc54710db293",
   "lastOpenFiles": [
-    "python/Collections/zip.md",
+    "http https/REST.md",
+    "http https/requests.md",
+    "http https/Отличия GET и POST.md",
+    "http https/Идемпотентность.md",
+    "http https/http методы/DELETE.md",
+    "http https/http методы/PUT.md",
+    "http https/http методы/POST.md",
+    "http https/http методы/PATCH.md",
+    "http https/http методы/GET.md",
+    "http https/http методы",
+    "http https/http.md",
+    "http https/https.md",
+    "http https/url.md",
     "python/Collections/itertools.md",
+    "http https",
+    "python/Collections/zip.md",
     "my_project/__pycache__",
     "my_project/examples/oop/oop_protocol_solid.py",
     "my_project/examples/oop/oop_polymorphism_solid.py",
@@ -192,8 +206,6 @@
     "my_project/examples/oop",
     "my_project/examples/ddd/ddd_medical_visit.py",
     "my_project/examples/ddd/ddd_course_enrollment.py",
-    "my_project/examples/ddd/ddd_aggregates_entities_vo.py",
-    "my_project/examples/order_service.py",
     "python/Collections/Типы коллекций/dict.md",
     "python/@dataclass.md",
     "python/Double underscore методы (__dunder__)/__post__init__(self).md",
@@ -205,18 +217,6 @@
     "python/Double underscore методы (__dunder__)/__init__(self, ...).md",
     "python/Double underscore методы (__dunder__)/__hash__(self).md",
     "python/Double underscore методы (__dunder__)/__getitem__(self, key).md",
-    "python/Double underscore методы (__dunder__)/__eq__(self, other).md",
-    "python/Collections/slices (Срезы).md",
-    "python/Collections/Типы коллекций/set.md",
-    "python/Collections/Типы коллекций/list.md",
-    "python/Comprehensions (генераторы коллекций)/Comprehension.md",
-    "python/Collections/Типы коллекций/tuple.md",
-    "python/GIL (Global Interpreter Lock).md",
-    "python/Interpreter (интерпретатор).md",
-    "python/Ellipsis (...).md",
-    "python/pass (операция).md",
-    "python/Комментарии-теги.md",
-    "python/Object storage/Где хранятся объекты.md",
-    "python/Comprehensions (генераторы коллекций)/list comprehension.md"
+    "python/Double underscore методы (__dunder__)/__eq__(self, other).md"
   ]
 }
