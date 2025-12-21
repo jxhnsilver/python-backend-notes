@@ -1,0 +1,42 @@
+<!-- templates/talons/detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>Талон #{{ talon.id }}</h1>
+
+    <div>
+        <p><strong>Врач:</strong> {{ talon.doctor.full_name }}</p>
+        <p><strong>Дата:</strong> {{ talon.date }}</p>
+        <p><strong>Время:</strong> {{ talon.start_time|time:"H:i" }} - {{ talon.end_time|time:"H:i" }}</p>
+        <p><strong>Статус:</strong>
+            {% if talon.is_free %}
+                <span style="color: green;">Свободен</span>
+            {% else %}
+                <span style="color: red;">Занят</span>
+            {% endif %}
+        </p>
+        <p><strong>Длительность:</strong> {{ talon.doctor.duration }} мин.</p>
+    </div>
+
+    <div>
+        {% if talon.is_free %}
+            <form action="{% url 'book_talon' talon.id %}" method="post" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit">Забронировать</button>
+            </form>
+        {% else %}
+            <form action="{% url 'cancel_talon' talon.id %}" method="post" style="display: inline;">
+                {% csrf_token %}
+                <button type="submit">Отменить бронь</button>
+            </form>
+        {% endif %}
+
+        <a href="{% url 'talons' %}">Все талоны</a> |
+        <a href="{% url 'schedules' %}">Расписания</a> |
+        <a href="{% url 'doctors_list' %}">Врачи</a>
+    </div>
+</body>
+</html>

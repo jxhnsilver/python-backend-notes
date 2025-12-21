@@ -1,0 +1,53 @@
+<!-- templates/talons/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>{{ page_title }}</h1>
+
+    {% if doctor %}
+        <p>Врач: {{ doctor.full_name }}</p>
+    {% endif %}
+
+    <a href="{% url 'create_talon' %}">Создать талон вручную</a> |
+    <a href="{% url 'schedules' %}">Расписания</a> |
+    <a href="{% url 'doctors_list' %}">Врачи</a>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Врач</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Статус</th>
+            <th>Действия</th>
+        </tr>
+        {% for talon in talons %}
+        <tr>
+            <td>{{ talon.id }}</td>
+            <td>{{ talon.doctor.full_name }}</td>
+            <td>{{ talon.date }}</td>
+            <td>{{ talon.start_time|time:"H:i" }} - {{ talon.end_time|time:"H:i" }}</td>
+            <td>
+                {% if talon.is_free %}
+                    <span style="color: green;">Свободен</span>
+                {% else %}
+                    <span style="color: red;">Занят</span>
+                {% endif %}
+            </td>
+            <td>
+                <a href="{% url 'talon_detail' talon.id %}">Подробнее</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="6">Нет созданных талонов</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- appointments/templates/talons/create.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Создание талона</title>
+</head>
+<body>
+    <h1>Создание талона</h1>
+
+    <a href="{% url 'talon_list' %}">Назад к списку</a>
+
+    <hr>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <p>
+            <label>Врач:</label><br>
+            <select name="doctor_id" required>
+                {% for doctor in doctors %}
+                    <option value="{{ doctor.id }}">{{ doctor.full_name }}</option>
+                {% endfor %}
+            </select>
+        </p>
+
+        <p>
+            <label>Дата:</label><br>
+            <input type="date" name="date" required>
+        </p>
+
+        <p>
+            <label>Время начала:</label><br>
+            <input type="time" name="start_time" required>
+        </p>
+
+        <p>
+            <label>Время окончания:</label><br>
+            <input type="time" name="end_time" required>
+        </p>
+
+        <button type="submit">Создать талон</button>
+    </form>
+</body>
+</html>

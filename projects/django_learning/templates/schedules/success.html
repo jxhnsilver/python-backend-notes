@@ -1,0 +1,28 @@
+<!-- appointments/templates/schedule/success.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>График создан</title>
+</head>
+<body>
+    <h1>Успешно!</h1>
+    <div style="color: green; font-weight: bold;">{{ message }}</div>
+
+    <h2>Информация о графике:</h2>
+    <ul>
+        <li>Врач: {{ doctor.full_name }}</li>
+        <li>Дата: {{ date }}</li>
+        <li>Создано талонов: {{ talons_count }}</li>
+        {% if schedule %}
+            <li>Время работы: {{ schedule.start_time }} - {{ schedule.end_time }}</li>
+            <li>Перерыв: {{ schedule.start_break_time }} - {{ schedule.end_break_time }}</li>
+        {% endif %}
+    </ul>
+
+    <p>
+        <a href="/schedule/create/">Создать еще один график</a> |
+        <a href="/">На главную</a>
+    </p>
+</body>
+</html>

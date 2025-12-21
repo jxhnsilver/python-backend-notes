@@ -1,0 +1,63 @@
+<!-- templates/schedules/create.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Создание графика</title>
+</head>
+<body>
+    <h1>Создание графика</h1>
+
+    <a href="{% url 'schedules' %}">Назад к расписаниям</a>
+
+    <hr>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <p>
+            <label>Врач:</label><br>
+            <select name="doctor_id" required>
+                {% for doctor in doctors %}
+                    <option value="{{ doctor.id }}">{{ doctor.full_name }}</option>
+                {% endfor %}
+            </select>
+        </p>
+
+        <p>
+            <label>Клиника:</label><br>
+            <select name="clinic_id" required>
+                {% for clinic in clinics %}
+                    <option value="{{ clinic.id }}">{{ clinic.name }}</option>
+                {% endfor %}
+            </select>
+        </p>
+
+        <p>
+            <label>Дата:</label><br>
+            <input type="date" name="date" required>
+        </p>
+
+        <p>
+            <label>Время начала:</label><br>
+            <input type="time" name="start_time" required>
+        </p>
+
+        <p>
+            <label>Время окончания:</label><br>
+            <input type="time" name="end_time" required>
+        </p>
+
+        <p>
+            <label>Начало перерыва:</label><br>
+            <input type="time" name="start_break_time" required>
+        </p>
+
+        <p>
+            <label>Конец перерыва:</label><br>
+            <input type="time" name="end_break_time" required>
+        </p>
+
+        <button type="submit">Создать график</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!-- templates/schedules/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>{{ page_title }}</h1>
+
+    <a href="{% url 'create_schedule' %}">Создать график</a> |
+    <a href="{% url 'talons' %}">Талоны</a> |
+    <a href="{% url 'doctors_list' %}">Врачи</a>
+
+    <hr>
+
+    {% for schedule in schedules %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+        <h3>График #{{ schedule.id }}</h3>
+        <p>Врач: {{ schedule.doctor.full_name }}</p>
+        <p>Клиника: {{ schedule.clinic.name }}</p>
+        <p>Дата: {{ schedule.date }}</p>
+        <p>Время: {{ schedule.start_time|time:"H:i" }} - {{ schedule.end_time|time:"H:i" }}</p>
+        <p>Перерыв: {{ schedule.start_break_time|time:"H:i" }} - {{ schedule.end_break_time|time:"H:i" }}</p>
+
+        <button onclick="showTalons({{ schedule.id }})">Показать талоны</button>
+
+        <div id="talons-{{ schedule.id }}" style="display: none; margin-top: 10px;">
+            <h4>Талоны:</h4>
+            {% if schedule.talons %}
+                <table border="1">
+                    <tr>
+                        <th>ID</th>
+                        <th>Время</th>
+                        <th>Статус</th>
+                        <th>Действия</th>
+                    </tr>
+                    {% for talon in schedule.talons %}
+                    <tr>
+                        <td>{{ talon.id }}</td>
+                        <td>{{ talon.start_time|time:"H:i" }} - {{ talon.end_time|time:"H:i" }}</td>
+                        <td>
+                            {% if talon.is_free %}
+                                Свободен
+                            {% else %}
+                                Занят
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{% url 'talon_detail' talon.id %}">Подробнее</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p>Талоны не созданы</p>
+                <a href="{% url 'generate_talons' schedule.id %}">Создать талоны</a>
+            {% endif %}
+        </div>
+    </div>
+    {% empty %}
+    <p>Нет созданных графиков</p>
+    {% endfor %}
+
+    <script>
+        function showTalons(scheduleId) {
+            var div = document.getElementById('talons-' + scheduleId);
+            if (div.style.display === 'none') {
+                div.style.display = 'block';
+            } else {
+                div.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

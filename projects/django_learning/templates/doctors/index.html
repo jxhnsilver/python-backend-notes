@@ -1,0 +1,32 @@
+<!-- templates/doctors/list.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>{{ page_title }}</h1>
+
+    <p>Всего врачей: {{ total_count }}</p>
+
+    {% if doctors %}
+        <ul>
+        {% for doctor in doctors %}
+            <li>
+                <strong>{{ doctor.full_name }}</strong><br>
+                Клиника: {% if doctor.clinic %}{{ doctor.clinic.name }}{% else %}Не указана{% endif %}<br>
+                Длительность приема: {{ doctor.duration }} минут<br>
+                ID врача: {{ doctor.id }}
+                <a href="/doctors/{{ doctor.id }}/">Детали врача</a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Врачи не найдены.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">На главную</a>
+</body>
+</html>
