@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "dfbe55afa048b2d7",
+        "id": "9294de996229d1b0",
         "type": "tabs",
         "children": [
           {
-            "id": "84171764ae2981e5",
+            "id": "a47ca330a67a3a93",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "python/re (regular expression).md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "re (regular expression)"
             }
           }
         ]
@@ -176,8 +180,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "84171764ae2981e5",
+  "active": "a47ca330a67a3a93",
   "lastOpenFiles": [
+    "python/re (regular expression).md",
+    "django/databases/select_related.md",
+    "django/databases/prefetch_related.md",
+    "django/databases/with transaction.atomic().md",
     "django/MVT/template.md",
     "django/MVT/view.md",
     "django/MVT/model.md",
@@ -195,12 +203,9 @@
     "projects/django_learning/appointments/services/__pycache__/talon_service.cpython-314.pyc",
     "projects/django_learning/appointments/services/__pycache__/schedule_service.cpython-314.pyc",
     "projects/django_learning/appointments/services/__pycache__/doctor_service.cpython-314.pyc",
-    "django/databases/with transaction.atomic().md",
-    "django/databases/select_related.md",
     "django/databases/filter.md",
     "django/databases/models.md",
     "django/databases/pk.md",
-    "django/databases/prefetch_related.md",
     "django/databases/queryset.md",
     "django/installed_apps.md",
     "django/manage.py.md",
