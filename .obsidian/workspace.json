@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/re (regular expression).md",
+                "file": "django/databases/migrations/ДЗ/Adding migrations to apps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "re (regular expression)"
+              "title": "Adding migrations to apps"
+            }
+          },
+          {
+            "id": "bd8399f6c0b56348",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "django/databases/migrations/ДЗ/Data migrations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data migrations"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,19 +195,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "a47ca330a67a3a93",
+  "active": "bd8399f6c0b56348",
   "lastOpenFiles": [
-    "python/re (regular expression).md",
-    "django/databases/select_related.md",
-    "django/databases/prefetch_related.md",
+    "django/databases/migrations/ДЗ/Dependencies.md",
+    "django/databases/migrations/ДЗ/Миграции.md",
+    "django/databases/migrations/ДЗ/Workflow.md",
+    "django/databases/migrations/ДЗ/Transactions.md",
+    "django/databases/migrations/ДЗ/RunPython.md",
+    "django/databases/migrations/ДЗ/Runsql.md",
+    "django/databases/migrations/ДЗ/Migration-flies.md",
+    "django/databases/migrations/ДЗ/migrate.md",
+    "django/databases/migrations/ДЗ/Historical models.md",
+    "django/databases/migrations/ДЗ/Data migrations.md",
+    "django/databases/migrations/ДЗ/Reversing migrations (Откат миграций).md",
     "django/databases/with transaction.atomic().md",
+    "django/databases/migrations/ДЗ.md",
+    "django/databases/migrations/ДЗ",
+    "django/databases/migrations/ДЗ/Adding migrations to apps.md",
+    "django/databases/migrations/ДЗ/Initial-migrations.md",
+    "django/databases/migrations/Как сделать миграции.md",
+    "django/databases/filter.md",
+    "django/databases/migrations/ДЗ/makemigrations.md",
+    "django/databases/select_related.md",
+    "django/databases/queryset.md",
+    "python/re (regular expression).md",
+    "django/databases/prefetch_related.md",
     "django/MVT/template.md",
     "django/MVT/view.md",
     "django/MVT/model.md",
-    "django/MVT/MVT.md",
     "Pasted image 20251221204837.png",
     "Pasted image 20251221204827.png",
-    "django/databases/Настройка БД.md",
     "django/MVT",
     "projects/django_learning/appointments/views/__pycache__/__init__.cpython-314.pyc",
     "projects/django_learning/appointments/views/__pycache__/talon_views.cpython-314.pyc",
@@ -201,24 +233,6 @@
     "projects/django_learning/appointments/views/__pycache__/doctor_views.cpython-314.pyc",
     "projects/django_learning/appointments/services/__pycache__/__init__.cpython-314.pyc",
     "projects/django_learning/appointments/services/__pycache__/talon_service.cpython-314.pyc",
-    "projects/django_learning/appointments/services/__pycache__/schedule_service.cpython-314.pyc",
-    "projects/django_learning/appointments/services/__pycache__/doctor_service.cpython-314.pyc",
-    "django/databases/filter.md",
-    "django/databases/models.md",
-    "django/databases/pk.md",
-    "django/databases/queryset.md",
-    "django/installed_apps.md",
-    "django/manage.py.md",
-    "django/path.md",
-    "django/urls.py.md",
-    "django/settings.py.md",
-    "django/request.md",
-    "django/__init__.py.md",
-    "django/databases/migrations/Как сделать миграции.md",
-    "django/databases/migrations/migrate.md",
-    "django/databases/migrations/makemigrations.md",
-    "http https/requests.md",
-    "http https/REST.md",
-    "http https/Отличия GET и POST.md"
+    "projects/django_learning/appointments/services/__pycache__/schedule_service.cpython-314.pyc"
   ]
 }
