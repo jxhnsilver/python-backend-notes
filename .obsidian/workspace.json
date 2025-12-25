@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "9294de996229d1b0",
+        "id": "85df8257847c5d59",
         "type": "tabs",
         "children": [
           {
-            "id": "a47ca330a67a3a93",
+            "id": "b8e25dc445be4053",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "django/databases/migrations/ДЗ/Adding migrations to apps.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Adding migrations to apps"
-            }
-          },
-          {
-            "id": "bd8399f6c0b56348",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "django/databases/migrations/ДЗ/Data migrations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Data migrations"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 391.5
   },
   "right": {
     "id": "bc6ad4631f8affdc",
@@ -195,44 +176,45 @@
       "bases:Create new base": false
     }
   },
-  "active": "bd8399f6c0b56348",
+  "active": "6c6f7144d96e50ec",
   "lastOpenFiles": [
-    "django/databases/migrations/ДЗ/Dependencies.md",
-    "django/databases/migrations/ДЗ/Миграции.md",
-    "django/databases/migrations/ДЗ/Workflow.md",
-    "django/databases/migrations/ДЗ/Transactions.md",
-    "django/databases/migrations/ДЗ/RunPython.md",
-    "django/databases/migrations/ДЗ/Runsql.md",
-    "django/databases/migrations/ДЗ/Migration-flies.md",
-    "django/databases/migrations/ДЗ/migrate.md",
-    "django/databases/migrations/ДЗ/Historical models.md",
-    "django/databases/migrations/ДЗ/Data migrations.md",
-    "django/databases/migrations/ДЗ/Reversing migrations (Откат миграций).md",
-    "django/databases/with transaction.atomic().md",
-    "django/databases/migrations/ДЗ.md",
-    "django/databases/migrations/ДЗ",
+    "django/cache/cache services/Redis.md",
+    "django/cache/cache services/Memcached.md",
+    "django/cache/cache services/Daemon.md",
+    "django/cache/Custom cache backend.md",
     "django/databases/migrations/ДЗ/Adding migrations to apps.md",
-    "django/databases/migrations/ДЗ/Initial-migrations.md",
-    "django/databases/migrations/Как сделать миграции.md",
-    "django/databases/filter.md",
-    "django/databases/migrations/ДЗ/makemigrations.md",
-    "django/databases/select_related.md",
-    "django/databases/queryset.md",
-    "python/re (regular expression).md",
-    "django/databases/prefetch_related.md",
-    "django/MVT/template.md",
-    "django/MVT/view.md",
-    "django/MVT/model.md",
+    "django/cache/Cache Versioning.md",
+    "django/cache/Cache Key Prefixing.md",
+    "django/cache/settings CACHES/VERSION.md",
+    "django/cache/Кэш.md",
+    "django/cache/django cache/Basic usage.md",
+    "django/cache/Кэширование.md",
+    "django/cache/django cache/The low-level cache API.md",
+    "django/cache/django cache/Django cache framework.md",
+    "django/cache/django cache",
+    "django/cache/Виды кэширования/Template fragment caching.md",
+    "django/cache/Виды кэширования/Specifying per-view cache in the URLconf.md",
+    "django/cache/Виды кэширования/Per-view cache.md",
+    "django/cache/Виды кэширования/Per-site cache.md",
+    "django/cache/Виды кэширования/Filesystem caching.md",
+    "django/cache/settings CACHES/KEY_FUNCTION.md",
+    "django/cache/Виды кэширования",
+    "django/cache/cache services/Untitled.md",
+    "django/cache/settings CACHES/KEY_PREFIX.md",
+    "django/cache/cache services/Кэш сервисы.md",
+    "django/cache/Виды кэширования/Local-memory caching.md",
+    "django/cache/Виды кэширования/Dummy caching.md",
+    "django/cache/pickle/pickle vs json.md",
+    "django/cache/pickle/pickle.md",
+    "django/cache/pickle",
+    "django/cache/cache services",
+    "django/cache/settings CACHES",
+    "django/cache",
+    "django/databases/migrations/ДЗ",
     "Pasted image 20251221204837.png",
     "Pasted image 20251221204827.png",
     "django/MVT",
     "projects/django_learning/appointments/views/__pycache__/__init__.cpython-314.pyc",
-    "projects/django_learning/appointments/views/__pycache__/talon_views.cpython-314.pyc",
-    "projects/django_learning/appointments/views/__pycache__/home_view.cpython-314.pyc",
-    "projects/django_learning/appointments/views/__pycache__/schedule_views.cpython-314.pyc",
-    "projects/django_learning/appointments/views/__pycache__/doctor_views.cpython-314.pyc",
-    "projects/django_learning/appointments/services/__pycache__/__init__.cpython-314.pyc",
-    "projects/django_learning/appointments/services/__pycache__/talon_service.cpython-314.pyc",
-    "projects/django_learning/appointments/services/__pycache__/schedule_service.cpython-314.pyc"
+    "projects/django_learning/appointments/views/__pycache__/talon_views.cpython-314.pyc"
   ]
 }
